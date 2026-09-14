@@ -1,0 +1,25 @@
+{
+  "retrieved_on": "2026-09-13",
+  "source": "UniProtKB reviewed records; organism_id 83333 (E. coli K-12)",
+  "query_template": "(organism_id:83333) AND (reviewed:true) AND (length:[50 TO 300]) AND (cc_scl_term:INCLUDE) AND NOT (cc_scl_term:EXCLUDE)",
+  "location_ids": {
+    "cytoplasm": "SL-0086",
+    "membrane": "SL-0162"
+  },
+  "selection": "First 100 accession-sorted results per query; standard 20 amino acids only; exact sequence deduplication; shuffle random_state=42; first 60 per class.",
+  "grouping": "Connected components: Biopython local alignment, BLOSUM62, gap open -10, extend -0.5; >=30% identity among paired residues and paired residues covering >=80% of each sequence. Not exhaustive homology detection.",
+  "split": "StratifiedGroupKFold(5, shuffle=True, random_state=42): fold 0 test, fold 1 validation, remaining training.",
+  "model_id": "facebook/esm2_t6_8M_UR50D",
+  "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+  "limitations": [
+    "Small annotation-derived teaching set, not a representative benchmark.",
+    "Related families may remain across splits despite similarity grouping.",
+    "ESM pretraining may include these proteins or relatives; this is not an unseen-sequence benchmark.",
+    "Membrane annotation includes diverse associations and is not restricted to transmembrane proteins.",
+    "No claim that embeddings outperform composition."
+  ],
+  "sha256": {
+    "proteins.csv": "eb32fb48771422ab10c7ce24c44a6b5c22170858443296f5ae964a26da4819fb",
+    "similarity_pairs.csv": "aaae5063665f142b97f0e68909cd8f40fe18ea83ebe0f579e53fcd44969c3303"
+  }
+}
