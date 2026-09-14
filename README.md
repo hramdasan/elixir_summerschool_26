@@ -7,10 +7,12 @@ Practical notebooks on neural networks, convolutional models, attention and prot
 | 0-python-and-notebooks.ipynb | Python and Jupyter basics |
 | 1-neural-networks.ipynb | Tensors, gradients, logistic regression and hidden layers |
 | 2-training-and-regularization.ipynb | Learning rates, dropout and evaluation |
-| 3-convolutional-neural-networks.ipynb | Image filters and synthetic DNA-motif classification |
+| 3-convolutional-neural-networks.ipynb | Image filters, synthetic nuclear-image classification, then DNA-motif classification |
 | 4-self-attention.ipynb | Embeddings, attention calculations, padding and position |
 | 5-transformers.ipynb | Download ESM-2, inspect tokens, mask residues, visualize attention and classify proteins |
 | 6-pytorch-lightning-optional.ipynb | Optional Lightning example |
+
+The CNN notebook starts with synthetic microscopy-like images of round and elongated nuclei, including learned feature maps, occlusion-sensitivity overlays and held-out image predictions, then transfers the convolution idea to DNA motifs. The overlays include image, class, patch-size and replacement controls, plus static examples for viewers without widgets. Both exercises run on CPU without a dataset download; their labels describe generated patterns, not experimentally measured biology.
 
 Completed exercises with example outputs and plots are in `answers/`. Open a notebook and run its cells in order with Shift + Enter.
 
